@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,7 @@
 body {
     box-sizing: border-box;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #welcome-section {
@@ -19,9 +21,19 @@ body {
     color: white;
 }
 
-#main {
-    background-color: blue;
+#welcome-section h1 {
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
 }
+
+#welcome-section p {
+    color: rgb(180, 44, 68);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#main {}
 
 #navbar {
     /* margin-top: 15px; */
@@ -87,26 +99,82 @@ body {
     padding: 15px;
 }
 
-#projects input {
+#show-all-btn {
     /* align-self: center; */
-    padding: 15px;
+    /* padding: 5px; */
+    margin-left: 40%;
     max-width: 15%;
-    margin-left: 42%;
     margin-bottom: 100px;
     margin-top: 30px;
     background: rgb(56, 60, 68);
     color: snow;
+    border: rgb(56, 60, 68);
+    font-size: 15px;
+    border-radius: 5px;
 }
 
+#show-all-btn a {
+    text-decoration: none;
+    color: snow;
+}
 
-/* span {
-    background: rgb(56, 60, 68);
-} */
+#show-all-btn:hover {
+    background-color: rgb(180, 44, 68);
+}
 
 #contact {
-    height: 100vh;
+    height: 50vh;
     background: rgb(56, 60, 68);
     padding-top: 100px;
+    text-align: center;
+    border-bottom: rgb(180, 44, 68) solid 4px;
+    /* color: snow; */
+}
+
+#contact h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#social {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 50px; */
+    /* color: snow; */
+}
+
+#social a {
+    margin: 20px;
+}
+
+#social a,
+i {
+    color: snow;
+    justify-content: space-evenly;
+    font-size: 25px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#contact h1 {
+    font-size: 50px;
+    color: snow;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    color: snow;
+}
+
+footer {
+    height: 15vh;
+    background: rgb(56, 60, 68);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: snow;
 }
 
 @media screen and (max-width: 400px) {}
