@@ -49,6 +49,7 @@ body {
     background: rgb(68, 84, 124);
     display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 
 #projects img {
@@ -61,13 +62,51 @@ body {
     margin: 20px
 }
 
-span {
-    background: rgb(56, 60, 68);
+.project-tile {
+    align-self: center;
+    color: white;
+    padding-bottom: 15px;
 }
+
+.project-tile h1 {
+    padding-bottom: 0px;
+    border-bottom: snow solid 2px;
+}
+
+#all-projects {
+    display: flex;
+}
+
+#all-projects a {
+    text-decoration: none;
+    color: snow;
+}
+
+#all-projects h3 {
+    background: rgb(56, 60, 68);
+    padding: 15px;
+}
+
+#projects input {
+    /* align-self: center; */
+    padding: 15px;
+    max-width: 15%;
+    margin-left: 42%;
+    margin-bottom: 100px;
+    margin-top: 30px;
+    background: rgb(56, 60, 68);
+    color: snow;
+}
+
+
+/* span {
+    background: rgb(56, 60, 68);
+} */
 
 #contact {
     height: 100vh;
     background: rgb(56, 60, 68);
+    padding-top: 100px;
 }
 
 @media screen and (max-width: 400px) {}
